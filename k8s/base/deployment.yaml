@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gamepulse-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gamepulse-app
+  template:
+    metadata:
+      labels:
+        app: gamepulse-app
+    spec:
+      containers:
+        - name: gamepulse-app
+          image: ghcr.io/gimmzee/gamepulse-app:latest
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 15
+            periodSeconds: 5
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
