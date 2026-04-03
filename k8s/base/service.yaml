@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: gamepulse-app-service
+  labels:
+    app: gamepulse-app
 spec:
   selector:
     app: gamepulse-app
