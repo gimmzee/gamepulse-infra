@@ -8,3 +8,4 @@ resources:
   - middleware/redis.yaml
   - middleware/kafka.yaml
   - middleware/elasticsearch.yaml
+  - frontend.yaml
