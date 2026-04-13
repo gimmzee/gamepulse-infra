@@ -22,7 +22,7 @@ spec:
               mountPath: /usr/share/elasticsearch/data
       containers:
         - name: elasticsearch
-          image: elasticsearch:8.17.0
+          image: elasticsearch:8.17.4
           env:
             - name: discovery.type
               value: single-node
