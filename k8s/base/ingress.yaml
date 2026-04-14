@@ -24,7 +24,7 @@ spec:
                 port:
                   number: 80
       # 외부 도메인 추가
-    - host: gamepulse.vbnmzxc.shop
+    - host: gamepulselab.vbnmzxc.shop
       http:
         paths:
           - path: /api
