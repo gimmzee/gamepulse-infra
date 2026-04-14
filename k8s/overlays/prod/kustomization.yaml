@@ -13,6 +13,6 @@ patches:
       name: gamepulse-app
 images:
   - name: ghcr.io/gimmzee/gamepulse-app
-    newTag: sha-864a75e
+    newTag: sha-d2b0ab1
   - name: ghcr.io/gimmzee/gamepulse-frontend
     newTag: sha-a1763ae
