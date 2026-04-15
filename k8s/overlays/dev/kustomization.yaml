@@ -7,4 +7,4 @@ images:
   - name: ghcr.io/gimmzee/gamepulse-app
     newTag: latest
   - name: ghcr.io/gimmzee/gamepulse-frontend
-    newTag: latest
+    newTag: sha-685a999
