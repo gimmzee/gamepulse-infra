@@ -5,4 +5,4 @@ resources:
   - ../../base
 images:
   - name: ghcr.io/gimmzee/gamepulse-app
-    newTag: latest
+    newTag: sha-82340cf
